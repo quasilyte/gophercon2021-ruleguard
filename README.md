@@ -62,3 +62,7 @@ $ go run check_setup.go
 * [Документация по формату gorule файлов](https://github.com/quasilyte/go-ruleguard/blob/master/_docs/dsl.md)
 * [godoc референс на пакет DSL](https://pkg.go.dev/github.com/quasilyte/go-ruleguard/dsl)
 * [Введение в ruleguard](https://habr.com/ru/post/481696/)
+
+## Контактная информация
+
+* [Группа go-critic в телеграме](https://t.me/go_critic_ru) (там же обсуждаем ruleguard)
