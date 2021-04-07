@@ -17,7 +17,7 @@ $ cd gophercon2021-ruleguard/check_install
 $ go run main.go
 ```
 
-Лучше всего для наших целей обучения ставить `go-ruleguard` из исходников. Но если вы предпочитаете бинарные релизы, то для версии `v0.3.4` есть бинарники для следующих платформ:
+Лучше всего для наших образовательных целей ставить `go-ruleguard` из исходников. Но если вы предпочитаете бинарные релизы, то для версии `v0.3.4` есть бинарники для следующих платформ:
 
 * [linux/amd64](https://github.com/quasilyte/go-ruleguard/releases/download/v0.3.4/ruleguard-linux-amd64.zip)
 * [linux/arm64](https://github.com/quasilyte/go-ruleguard/releases/download/v0.3.4/ruleguard-linux-arm64.zip)
