@@ -13,8 +13,8 @@
 
 ```bash
 $ git clone https://github.com/quasilyte/gophercon2021-ruleguard.git
-$ cd gophercon2021-ruleguard
-$ go run check_setup.go
+$ cd gophercon2021-ruleguard/check_install
+$ go run main.go
 ```
 
 **Вступление:**
