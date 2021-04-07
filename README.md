@@ -1,4 +1,4 @@
-# GopherCon Russia 2021 -- ruleguard workshop
+# [GopherCon Russia](https://www.gophercon-russia.ru/) 2021 -- [ruleguard](https://github.com/quasilyte/go-ruleguard) workshop
 
 ## План
 
@@ -12,6 +12,8 @@
 Для этого можно использовать скрипт `check_setup.go` из корня этого репозитория:
 
 ```bash
+$ git clone https://github.com/quasilyte/gophercon2021-ruleguard.git
+$ cd gophercon2021-ruleguard
 $ go run check_setup.go
 ```
 
@@ -60,3 +62,7 @@ $ go run check_setup.go
 * [Документация по формату gorule файлов](https://github.com/quasilyte/go-ruleguard/blob/master/_docs/dsl.md)
 * [godoc референс на пакет DSL](https://pkg.go.dev/github.com/quasilyte/go-ruleguard/dsl)
 * [Введение в ruleguard](https://habr.com/ru/post/481696/)
+
+## Контактная информация
+
+* [Группа go-critic в телеграме](https://t.me/go_critic_ru) (там же обсуждаем ruleguard)
