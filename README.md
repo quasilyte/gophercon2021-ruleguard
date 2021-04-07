@@ -1,6 +1,7 @@
 # [GopherCon Russia](https://www.gophercon-russia.ru/) 2021 -- [ruleguard](https://github.com/quasilyte/go-ruleguard) workshop
 
 > В директории [notes/](notes) можно найти краткое текстовое содержание по многим пунктам из плана.
+> Ссылки в виде 📖 ведут на записи, относящиеся теме.
 
 ## План
 
@@ -48,8 +49,8 @@ $ go run main.go
 
 ### Интеграции
 
-* Запуск ruleguard через [go-critic](https://github.com/go-critic/go-critic)
-* Запуск ruleguard через [golangci-lint](https://github.com/golangci/golangci-lint)
+* [📖](notes/gocritic_integration.md) Запуск ruleguard через [go-critic](https://github.com/go-critic/go-critic)
+* [📖](notes/golangci_integration.md) Запуск ruleguard через [golangci-lint](https://github.com/golangci/golangci-lint)
 * golangci-lint: решаем типичные проблемы интеграции
 * Разные наборы правил для разных частей проекта
 
