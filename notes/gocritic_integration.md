@@ -1,8 +1,8 @@
 ## Запуск ruleguard из линтера gocritic
 
-[go-critic](https://github.com/go-critic/go-critic) имеет диагностику под названием `ruleguard`.
+[go-critic](https://github.com/go-critic/go-critic) имеет диагностику под названием [ruleguard](https://go-critic.github.io/overview.html#ruleguard).
 
-Эта диагностика реализована с помощью библиотечного API `ruleguard`. 
+Эта диагностика реализована с помощью [библиотечного API ruleguard](https://pkg.go.dev/github.com/quasilyte/go-ruleguard/ruleguard).
 
 ```bash
 $ gocritic doc | grep ruleguard
