@@ -68,6 +68,8 @@ $ go run main.go
 * Запускаем правила на выбранном проекте
 * Пишем тесты для правил
 
+Вдохновение и идеи для правил можно брать здесь: [go-ruleguard.github.io/random](https://go-ruleguard.github.io/random/)
+
 ## Справочные материалы
 
 * [ruleguard by example](https://go-ruleguard.github.io/by-example/)
