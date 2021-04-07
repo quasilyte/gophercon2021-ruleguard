@@ -1,5 +1,7 @@
 ## Запуск ruleguard из golangci-lint
 
+### Включаем ruleguard
+
 [golangci-lint](https://github.com/golangci/golangci-lint) имеет в своём наборе линтер [gocritic](https://github.com/go-critic/go-critic). А `gocritic` интегрирует `ruleguard`. Следовательно, мы можем использовать `ruleguard` через `golangci-lint`.
 
 Чтобы пользоваться `ruleguard`, нужно выполнить 3 шага:
@@ -81,3 +83,17 @@ golangci-lint cache clean
 
 По этой и некоторым другим причинам я рекомендую тестировать и разрабатывать правила с использованием standalone бинарника `ruleguard`, а не
 через интеграцию с `gocritic` или `golangci-lint`.
+
+### Решение проблем интеграции
+
+#### Относительный путь в параметре rules
+
+При использовании относительного пути в конфиге `.golangci.yml` для параметра `rules` вы получите путь, относительный директории запуска `golangci-lint`.
+
+Одним из решений является препроцессинг `.golangci.yml` файла. Например, [вот пример с использованием mustache](https://github.com/golangci/golangci-lint/issues/1662#issuecomment-778898705).
+
+```yaml
+    settings:
+      ruleguard:
+        rules: "{{RULEGUARD_DIR}}/myrules.go"
+```
