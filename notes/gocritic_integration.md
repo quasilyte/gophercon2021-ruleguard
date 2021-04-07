@@ -37,3 +37,5 @@ gocritic check -enable ruleguard -@ruleguard.rules rules.go ./target
 ```
 
 Параметр `-@ruleguard.debug` эквивалентен параметру `-debug-group` в `ruleguard`. Отладка с его помощью возможна, но я рекомендую тестировать и отлаживать правила через отдельный `ruleguard`, а `gocritic` (или `golangci-lint`) использовать только для финальной интеграции.
+
+Чаще всего, если возникает какая-то проблема с работой `ruleguard` из `gocritic`, корень лежит где-то [здесь](https://github.com/go-critic/go-critic/blob/master/checkers/ruleguard_checker.go).
