@@ -1,4 +1,4 @@
-# GopherCon Russia 2021 -- ruleguard workshop
+# [GopherCon Russia](https://www.gophercon-russia.ru/) 2021 -- [ruleguard](https://github.com/quasilyte/go-ruleguard) workshop
 
 ## План
 
