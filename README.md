@@ -1,6 +1,6 @@
 # [GopherCon Russia](https://www.gophercon-russia.ru/) 2021 -- [ruleguard](https://github.com/quasilyte/go-ruleguard) workshop
 
-> В директории [notes/](notes) можно найти краткое содержание по многим пунктам из плана.
+> В директории [notes/](notes) можно найти краткое текстовое содержание по многим пунктам из плана.
 
 ## План
 
