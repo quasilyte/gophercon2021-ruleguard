@@ -12,6 +12,8 @@
 Для этого можно использовать скрипт `check_setup.go` из корня этого репозитория:
 
 ```bash
+$ git clone https://github.com/quasilyte/gophercon2021-ruleguard.git
+$ cd gophercon2021-ruleguard
 $ go run check_setup.go
 ```
 
