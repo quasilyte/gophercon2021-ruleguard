@@ -37,3 +37,9 @@ $ cd go-ruleguard
 $ go build -o bin/ruleguard ./cmd/ruleguard
 $ ./bin/ruleguard --help
 ```
+
+> Я не рекомендую делать `-o ruleguard` так как в репозитории уже есть директория с названием `ruleguard`; поэтому кладём бинарник в директорию `./bin`.
+
+Бинарник `bin/ruleguard` можно положить куда-нибудь под системный `$PATH`.
+
+Для Windows может потребоваться делать `-o bin/ruleguard.exe` (с суффиксом `.exe`).
