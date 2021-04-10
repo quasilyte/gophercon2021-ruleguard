@@ -20,6 +20,13 @@
 $ git clone https://github.com/quasilyte/gophercon2021-ruleguard.git
 $ cd gophercon2021-ruleguard/check_install
 $ go run main.go
+* running check go version step
+* running install ruleguard to this module step
+* running run ruleguard step
+* running install rules bundle step
+* running run ruleguard with bundle rules step
+* running run gorule tests step
+Everything looks good!
 ```
 
 Лучше всего для наших образовательных целей ставить `go-ruleguard` из исходников. Но если вы предпочитаете бинарные релизы, то для версии `v0.3.4` есть бинарники для следующих платформ:
