@@ -28,7 +28,7 @@ func suggestConcat(m dsl.Matcher) {
 
 Поскольку мы хотим матчить вызовы `fmt.Sprintf` с конкретной формат-строкой, мы так и записываем:
 
-```
+```go
 m.Match(`fmt.Sprintf("%s%s", $x, $y))
 ```
 
@@ -39,7 +39,7 @@ m.Match(`fmt.Sprintf("%s%s", $x, $y))
 
 На этом этапе мы добавляем вызов `Where` как раз с таким условием:
 
-```
+```go
 m.Match(`fmt.Sprintf("%s%s", $x, $y)).
   Where(m["x"].Type.Is(`string`) && m["y"].Type.Is(`string`))
 ```
@@ -53,7 +53,7 @@ m.Match(`fmt.Sprintf("%s%s", $x, $y)).
 
 После фильтрации мы хотим выполнить какое-то действие. Например, выдать предупреждение. Добавим вызов `Report`:
 
-```
+```go
 m.Match(`fmt.Sprintf("%s%s", $x, $y)).
   Where(m["x"].Type.Is(`string`) && m["y"].Type.Is(`string`)).
   Report("could use a simple concat for $x and $y instead of the Sprintf call")
@@ -98,7 +98,7 @@ func suggestConcat(m dsl.Matcher) {
     Report("could use a simple concat for $x and $y instead of the Sprintf call")
 
   m.Match(`strings.Join([]string{$a, $b}, "")`).
-		Report("could rewrite a strings.Join call as $a+$b")
+    Report("could rewrite a strings.Join call as $a+$b")
 }
 ```
 
@@ -117,10 +117,10 @@ func suggestConcat(m dsl.Matcher) {
     Report("could use a simple concat for $x and $y instead of the Sprintf call")
 
   m.Match(`strings.Join([]string{$a, $b}, "")`).
-		Report("could rewrite a strings.Join call as $a+$b")
+    Report("could rewrite a strings.Join call as $a+$b")
     
   m.Match(`strings.Join([]string{$a, $b}, $glue)`).
-    Suggest(`could rewrite a strings.Join call as $a+$glue+$b`)
+    Report(`could rewrite a strings.Join call as $a+$glue+$b`)
 }
 ```
 
