@@ -24,7 +24,7 @@ func suggestConcat(m dsl.Matcher) {
 
 Возьмём следующий файл для анализа (`target.to`):
 
-```
+```go
 package example
 
 import "strings"
@@ -39,7 +39,7 @@ func f(i int, b []byte, s1, s2 string) {
 
 А теперь запустим `ruleguard` с флагом отладки:
 
-```
+```bash
 $ ruleguard -rules rules.go -debug-group suggestConcat ./target.go
 target.go:7: [rules.go:6] rejected by m["x"].Type.Is(`string`)
   $x int: i
