@@ -2,7 +2,7 @@
 
 Мы написали следующий файл с правилами:
 
-```
+```go
 package gorules
 
 import "github.com/quasilyte/go-ruleguard/dsl"
