@@ -38,6 +38,15 @@ Everything looks good!
 
 Также стоит установить пакет `github.com/quasilyte/go-ruleguard/dsl`. Он является отдельным модулем и нужен для компиляции правил.
 
+Собрать `ruleguard` из исходников можно, например, так:
+
+```
+$ git clone https://github.com/quasilyte/go-ruleguard.git
+$ cd go-ruleguard
+$ go build -o bin/ruleguard ./cmd/ruleguard
+$ ./bin/ruleguard --help
+```
+
 ### Вступление
 
 * Введение в проблематику, "какие задачи мы собрались решать?"
