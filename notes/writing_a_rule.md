@@ -29,7 +29,7 @@ func suggestConcat(m dsl.Matcher) {
 Поскольку мы хотим матчить вызовы `fmt.Sprintf` с конкретной формат-строкой, мы так и записываем:
 
 ```go
-m.Match(`fmt.Sprintf("%s%s", $x, $y))
+m.Match(`fmt.Sprintf("%s%s", $x, $y)`)
 ```
 
 Поскольку аргументы для `Sprintf` могут быть любые, мы вставляем туда переменные шаблона - `$x` и `$y`.
@@ -40,7 +40,7 @@ m.Match(`fmt.Sprintf("%s%s", $x, $y))
 На этом этапе мы добавляем вызов `Where` как раз с таким условием:
 
 ```go
-m.Match(`fmt.Sprintf("%s%s", $x, $y)).
+m.Match(`fmt.Sprintf("%s%s", $x, $y)`).
   Where(m["x"].Type.Is(`string`) && m["y"].Type.Is(`string`))
 ```
 
@@ -54,7 +54,7 @@ m.Match(`fmt.Sprintf("%s%s", $x, $y)).
 После фильтрации мы хотим выполнить какое-то действие. Например, выдать предупреждение. Добавим вызов `Report`:
 
 ```go
-m.Match(`fmt.Sprintf("%s%s", $x, $y)).
+m.Match(`fmt.Sprintf("%s%s", $x, $y)`).
   Where(m["x"].Type.Is(`string`) && m["y"].Type.Is(`string`)).
   Report("could use a simple concat for $x and $y instead of the Sprintf call")
 ```
