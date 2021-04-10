@@ -76,6 +76,7 @@ $ go run main.go
 ## Справочные материалы
 
 * [ruleguard by example](https://go-ruleguard.github.io/by-example/)
+* [Random ruleguard snippets](https://go-ruleguard.github.io/random)
 * [Документация по формату gorule файлов](https://github.com/quasilyte/go-ruleguard/blob/master/_docs/dsl.md)
 * [godoc референс на пакет DSL](https://pkg.go.dev/github.com/quasilyte/go-ruleguard/dsl)
 * [Введение в ruleguard](https://habr.com/ru/post/481696/)
