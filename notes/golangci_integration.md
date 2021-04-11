@@ -4,6 +4,8 @@
 
 [golangci-lint](https://github.com/golangci/golangci-lint) имеет в своём наборе линтер [gocritic](https://github.com/go-critic/go-critic). А `gocritic` интегрирует `ruleguard`. Следовательно, мы можем использовать `ruleguard` через `golangci-lint`.
 
+![image](https://user-images.githubusercontent.com/6286655/114297491-9ab34800-9ab9-11eb-8845-2e7df8a43895.png)
+
 Чтобы пользоваться `ruleguard`, нужно выполнить 3 шага:
 
 * Убедиться, что `gocritic` включен (по умолчанию он выключен)
