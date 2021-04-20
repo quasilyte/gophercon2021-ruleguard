@@ -78,15 +78,16 @@ func init() {
 package example
 
 import (
-  "strings"
-  "bytes"
+	"bytes"
+	"sort"
+	"strings"
 )
 
 func f(s string, b []byte, ints []int) {
 	_ = strings.Count(s, "/") >= 0
 	_ = bytes.Count(b, []byte("/")) >= 0
-  
-  sort.Slice(ints, func(i, j int) bool {
+
+	sort.Slice(ints, func(i, j int) bool {
 		return ints[i] < ints[j]
 	})
 }
