@@ -1,0 +1,6 @@
+github.com/google/go-cmp v0.5.5 h1:Khx7svrCpmxxtHBq5j2mp/xVjsi8hQMfNLvJFAlrGgU=
+github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
+github.com/quasilyte/go-ruleguard v0.3.4 h1:F6l5p6+7WBcTKS7foNQ4wqA39zjn2+RbdbyzGxIq1B0=
+github.com/quasilyte/go-ruleguard/dsl v0.3.2 h1:ULi3SLXvDUgb0u2IM5xU6er9KeWBSaUh1NlDjCgLHU8=
+github.com/quasilyte/go-ruleguard/dsl v0.3.2/go.mod h1:KeCP03KrjuSO0H1kTuZQCWlQPulDV6YMIXmpQss17rU=
+golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
