@@ -31,6 +31,8 @@ func example(x int) {
 
 Портируем [unslice](https://go-critic.github.io/overview.html#unslice) диагостику из анализатора [gocritic](https://github.com/go-critic/go-critic).
 
+![image](https://user-images.githubusercontent.com/6286655/115932102-ef30cd00-a494-11eb-8ed6-96e70cf9ff85.png)
+
 Стоит учесть все граничные случаи (их не так много, но они есть).
 
 Вам потребуются [паттерны типов](https://github.com/quasilyte/gophercon2021-ruleguard/blob/master/notes/advanced_filters.md#%D0%BF%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD%D1%8B-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2).
