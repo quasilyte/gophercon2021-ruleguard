@@ -52,7 +52,7 @@
 Я считаю, что разделения на strict и non-strict части проекта бывает достаточно. Причём включение в strict группу должно выполняться
 добровольно, самой командой. В strict конфиге мы включаем больше диагностик, в non-strict только те, что удовлетворяют почти всех.
 
-### Рекомендации от [@ernado](https://github.com/ernado), меинтейнера golangci-lint
+### Рекомендации от [@ernado](https://github.com/ernado), меинтейнера [golangci-lint](https://github.com/golangci/golangci-lint)
 
 * Не забывайте про exclude rules `(1)`
 * Дефолты линтеров - не истина последней инстанции
