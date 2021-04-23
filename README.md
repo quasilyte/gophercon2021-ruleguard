@@ -61,7 +61,7 @@
 
 Вдохновение и идеи для правил можно брать здесь: [go-ruleguard.github.io/random](https://go-ruleguard.github.io/random/).
 
-Альтернативным заданием является выполнение задачек из [program/practice_assignments.md](program/practice_assignments.md).
+Альтернативным вариантом является выполнение задачек из [program/practice_assignments.md](program/practice_assignments.md).
 
 ## Справочные материалы
 
