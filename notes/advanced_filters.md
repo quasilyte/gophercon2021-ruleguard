@@ -121,4 +121,5 @@ func reflectValueCompare(m dsl.Matcher) {
 			!m["y"].Node.Is(`CompositeLit`)).
 		Report("avoid using reflect.DeepEqual with reflect.Value").
 		Suggest("reflect.DeepEqual($x.Interface(), $y.Interface()")
+}
 ```
